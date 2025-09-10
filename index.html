@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reloj y Cronómetro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>⏰ Reloj y Cronómetro</h1>
+
+  <!-- Reloj local: ESTE es el div correcto -->
+  <div id="hora-local">--:--:--</div>
+
+  <!-- Controles -->
+  <div id="controles">
+    <label>
+      <input type="checkbox" id="toggle-fondo" checked />
+      Fondo dinámico
+    </label>
+    <div>
+      <div>Ciudades Europa:</div>
+      <select id="select-ciudades" multiple size="5"></select>
+    </div>
+  </div>
+
+  <!-- Horas Europa -->
+  <div id="lista-europa"></div>
+
+  <!-- Cronómetro -->
+  <div id="cronometro">
+    <h2>⏱ Cronómetro</h2>
+    <div id="cronometro-display">00:00:00.00</div>
+    <div class="acciones">
+      <button id="btn-start">Iniciar</button>
+      <button id="btn-lap" disabled>Vuelta</button>
+      <button id="btn-reset" disabled>Reiniciar</button>
+    </div>
+    <ul id="laps"></ul>
+  </div>
+
+  <!-- Importante: enlazar app.js al final -->
+  <script src="app.js"></script>
+</body>
+</html>
+
+
